@@ -194,7 +194,7 @@ int PgwBinder2:: DCalgorithm( std::vector<std::pair<pingpair,DC*>> DCvector){
 }
 int PgwBinder2::selectDCbyeNB(eNBset* eNBsetptr){
     //in here implement the DC selection algoritm.
-    double RTT=0.0006;//RTT setting later it would be easier to configure with par(RTT)
+    double RTT=par(RTT);//RTT setting later it would be easier to configure with par(RTT)
     int index;
     int selectedindex;
 
